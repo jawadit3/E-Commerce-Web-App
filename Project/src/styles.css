@@ -8,3 +8,24 @@ body{
   margin-left: 5%;
 }
 
+.common-form{
+  display: flex;
+  text-align: center;
+  margin: auto;
+  flex-direction: column;
+  width: 300px;
+}
+
+.common-input{
+  height: 35px;
+  margin-bottom: 15px;
+  border: 1px solid blueviolet;
+  color: blueviolet;
+}
+
+.common-button{
+  border: 1px solid blueviolet;
+  height: 35px;
+  cursor:pointer;
+}
+
