@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { SellerService } from '../services/seller.service';
+import { Login } from '../types/Login';
 import { SignUp } from '../types/SignUp';
 
 @Component({
@@ -10,6 +11,8 @@ import { SignUp } from '../types/SignUp';
 })
 export class SellerAuthComponent implements OnInit {
 
+  showLogin = true;
+  authError = '';
   constructor(private sellerService: SellerService) { }
 
   ngOnInit(): void {
@@ -20,4 +23,19 @@ export class SellerAuthComponent implements OnInit {
     let result = this.sellerService.signUp(payload);
   }
 
+  openSignUp(){
+    this.showLogin=false;
+  }
+
+  openLogin(){
+    this.showLogin=true;
+  }
+
+  login(payload : Login){
+    this.authError = "";
+    let result = this.sellerService.login(payload);
+    this.sellerService.loginError.subscribe(
+      error => { if(error) this.authError = "something went wrong"; }
+    );
+  }
 }

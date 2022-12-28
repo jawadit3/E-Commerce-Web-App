@@ -9,6 +9,10 @@
   font-size: 40px;
 }
 
+.nav h1 a{
+  text-decoration: none;
+}
+
 .nav ul{
   display: inline-flex;
 
@@ -26,6 +30,7 @@
 
   color: blueviolet;
   border: 1px solid blueviolet;
+  width: 450px;
   height: 35px;
   border-right: 0px;
 }
@@ -38,7 +43,7 @@
 .nav ul li{
   color:blueviolet;
   list-style-type: none;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .nav ul li a{
