@@ -30,3 +30,9 @@ body{
   color: blueviolet;
 }
 
+.success-message{
+  color:green;
+  text-align: center;
+  background-color: blue;
+}
+

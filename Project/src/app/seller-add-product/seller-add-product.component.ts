@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../services/product.service';
+import { Product } from '../types/Product';
 
 @Component({
   selector: 'app-seller-add-product',
@@ -7,12 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SellerAddProductComponent implements OnInit {
 
-  constructor() { }
+  message : string | undefined;
+  constructor(private productService:ProductService) { }
 
   ngOnInit(): void {
+    this.productService.isProductAdded.subscribe(
+      data => {
+        if(data){
+           this.message = "product is added";
+           setTimeout(() => this.message = undefined, 3000);
+        }
+      }
+    );
   }
 
-  addProduct(object: any){
-    console.warn(object);
+  addProduct(object: Product){
+    this.productService.addProduct(object);
   }
 }

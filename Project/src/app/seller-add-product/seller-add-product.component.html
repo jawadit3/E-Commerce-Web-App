@@ -1,13 +1,17 @@
-<h1>Add Product Form</h1>
+<div class="seller-add-product">
+  <h1>Add Product Form</h1>
+  <p class="success-message">{{message}}</p>
 
-  <!-- Add Product Form -->
-<form #addProductForm="ngForm" class="common-form" (ngSubmit)="addProduct(addProductForm.value)">
+    <!-- Add Product Form -->
+  <form #addProductForm="ngForm" class="common-form" (ngSubmit)="addProduct(addProductForm.value)">
 
-   <input class="common-input" ngModel name="name" type="text" placeholder="Enter Product Name">
-   <input class="common-input" ngModel name="category" type="text" placeholder="Enter Product Category">
-   <input class="common-input" ngModel name="price" type="text" placeholder="Enter Product Price">
-   <textarea class="common-input" ngModel name="description" type="text" placeholder="Enter Product Description"></textarea>
-   <input class="common-input" ngModel name="url" type="text" placeholder="Enter Product Image Url">
-   <button class="common-button">Add</button>
+     <input class="common-input" ngModel name="name" type="text" placeholder="Enter Product Name">
+     <input class="common-input" ngModel name="category" type="text" placeholder="Enter Product Category">
+     <input class="common-input" ngModel name="price" type="text" placeholder="Enter Product Price">
+     <textarea class="common-input" ngModel name="description" type="text" placeholder="Enter Product Description"></textarea>
+     <input class="common-input" ngModel name="url" type="text" placeholder="Enter Product Image Url">
+     <button class="common-button">Add</button>
 
-  </form>
+    </form>
+
+</div>

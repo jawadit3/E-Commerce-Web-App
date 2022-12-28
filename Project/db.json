@@ -6,5 +6,47 @@
       "password": "Pass123",
       "id": 1
     }
+  ],
+  "products": [
+    {
+      "name": "",
+      "category": "",
+      "price": "",
+      "description": "",
+      "url": "http://localhost:4200/seller-add-product",
+      "id": 1
+    },
+    {
+      "name": "jawad ahmed",
+      "category": "dcd",
+      "price": "zc",
+      "description": "kk",
+      "url": "http://localhost:4200/seller-add-product",
+      "id": 2
+    },
+    {
+      "name": "jawad ahmed",
+      "category": "dcd",
+      "price": "zc",
+      "description": "",
+      "url": "",
+      "id": 3
+    },
+    {
+      "name": "",
+      "category": "",
+      "price": "",
+      "description": "",
+      "url": "",
+      "id": 4
+    },
+    {
+      "name": "",
+      "category": "",
+      "price": "",
+      "description": "",
+      "url": "",
+      "id": 5
+    }
   ]
 }
