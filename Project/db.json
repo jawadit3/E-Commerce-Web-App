@@ -11,18 +11,18 @@
     {
       "name": "Barley Poridge",
       "category": "Oat Meal",
-      "price": "1200",
+      "price": "4600",
       "description": "healthy meal",
       "url": "https://static-01.daraz.pk/p/e62635d8bb1f44b14862ac761c4afadd.jpg",
-      "id": 1
+      "id": 5
     },
     {
       "name": "Barley Poridge",
       "category": "Oat Meal",
-      "price": "1200",
+      "price": "4600",
       "description": "healthy meal",
       "url": "https://static-01.daraz.pk/p/e62635d8bb1f44b14862ac761c4afadd.jpg",
-      "id": 2
+      "id": 5
     }
   ]
 }

@@ -1,5 +1,6 @@
 <div class="product-list">
   <h1>product list</h1>
+  <p class="success-message">{{message}}</p>
   <table>
     <thead>
       <tr>
@@ -7,14 +8,16 @@
         <th>name</th>
         <th>category</th>
         <th>price</th>
+        <th>delete</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let product of productList">
         <td><img src="{{product.url}}" /></td>
         <td>{{product.name}}</td>
-        <td>{{product.category}</td>
+        <td>{{product.category}}</td>
         <td>{{product.price}}</td>
+        <td><button (click)="deleteProduct(product.id)">delete</button></td>
       </tr>
     </tbody>
   </table>
