@@ -33,6 +33,15 @@ body{
 .success-message{
   color:green;
   text-align: center;
-  background-color: blue;
+}
+
+table{
+  border: 1px solid blueviolet;
+  margin: auto;
+}
+
+table td, table th{
+  padding: 10px;
+  border: 1px solid blueviolet;
 }
 

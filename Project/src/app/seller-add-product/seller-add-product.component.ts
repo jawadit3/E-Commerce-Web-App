@@ -10,10 +10,9 @@ import { Product } from '../types/Product';
 export class SellerAddProductComponent implements OnInit {
 
   message : string | undefined;
-  constructor(private productService:ProductService) { }
+  constructor(private productService:ProductService) {
 
-  ngOnInit(): void {
-    this.productService.isProductAdded.subscribe(
+    productService.isProductAdded.subscribe(
       data => {
         if(data){
            this.message = "product is added";
@@ -21,6 +20,10 @@ export class SellerAddProductComponent implements OnInit {
         }
       }
     );
+   }
+
+  ngOnInit(): void {
+
   }
 
   addProduct(object: Product){

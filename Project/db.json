@@ -9,44 +9,20 @@
   ],
   "products": [
     {
-      "name": "",
-      "category": "",
-      "price": "",
-      "description": "",
-      "url": "http://localhost:4200/seller-add-product",
+      "name": "Barley Poridge",
+      "category": "Oat Meal",
+      "price": "1200",
+      "description": "healthy meal",
+      "url": "https://static-01.daraz.pk/p/e62635d8bb1f44b14862ac761c4afadd.jpg",
       "id": 1
     },
     {
-      "name": "jawad ahmed",
-      "category": "dcd",
-      "price": "zc",
-      "description": "kk",
-      "url": "http://localhost:4200/seller-add-product",
+      "name": "Barley Poridge",
+      "category": "Oat Meal",
+      "price": "1200",
+      "description": "healthy meal",
+      "url": "https://static-01.daraz.pk/p/e62635d8bb1f44b14862ac761c4afadd.jpg",
       "id": 2
-    },
-    {
-      "name": "jawad ahmed",
-      "category": "dcd",
-      "price": "zc",
-      "description": "",
-      "url": "",
-      "id": 3
-    },
-    {
-      "name": "",
-      "category": "",
-      "price": "",
-      "description": "",
-      "url": "",
-      "id": 4
-    },
-    {
-      "name": "",
-      "category": "",
-      "price": "",
-      "description": "",
-      "url": "",
-      "id": 5
     }
   ]
 }
